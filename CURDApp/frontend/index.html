@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUD App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id = "container">
+            <p class="intro">
+                Learn about HTTP methods with HTML forms for <strong>GET, POST, PUT, and DELETE</strong>.
+                The backend is in Node.js.
+            </p>
+            <div id = "htmlMethod">
+                <div class = "httpMethodName">
+                    <div id = "getBox" class="methodBox">
+                        GET
+                    </div>
+                    <div class="methodDetails">
+                        <div>Link:</div>
+                        <div class = "httpLink">http://localhost:8000/index.html</div>
+                    </div>
+                    <form id = "getForm">
+                        <input type = 'number' placeholder="Enter user ID" id = "getInput">
+                        <input type = 'submit' value = "GET">
+                    </form>
+
+                    <div id = "getResult" class = "resultBox">
+                    </div>
+                </div>
+
+                <div class = "httpMethodName">
+                    <div id = "postBox" class="methodBox">
+                        POST
+                    </div>
+                    <div class="methodDetails">
+                        <div>Link:</div>
+                        <div class = "httpLink">http://localhost:8000/index.html</div>
+                    </div>
+                    <form id = "postForm">
+                        <input type = 'text' placeholder="Enter name" id = "postName">
+                        <input type = 'password' placeholder="Enter password" id = "postPassword">
+                        <input type = 'submit' value = "POST">
+                    </form>
+                    <div id="postResult" class="resultBox"></div>
+                </div>
+
+                <div class = "httpMethodName">
+                    <div id = "deleteBox" class="methodBox">
+                        DELETE
+                    </div>
+                    <div class="methodDetails">
+                        <div>Link:</div>
+                        <div class = "httpLink">http://localhost:8000/index.html</div>
+                    </div>
+                    <form id = "deleteForm">
+                        <input type = 'number' placeholder="Enter user ID" id = "deleteInput">
+                        <input type = 'submit' value = "DELETE">
+                    </form>
+                    <div id="deleteResult" class="resultBox"></div>
+                </div>
+
+                <div class = "httpMethodName">
+                    <div id = "putBox" class="methodBox">
+                        PUT
+                    </div>
+                    <div class="methodDetails">
+                        <div>Link:</div>
+                        <div class = "httpLink">http://localhost:8000/index.html</div>
+                    </div>
+                    <form id = "putForm">
+                        <input type = 'number' placeholder="Enter user ID" id = "putInput">
+                        <input type = 'text' placeholder="Enter name" id = "putName">
+                        <input type = 'submit' value = "PUT">
+                    </form>
+                    <div id="putResult" class="resultBox"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src = "script.js"></script>
+</html>
+
+
+
